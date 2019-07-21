@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="195.0" prefWidth="427.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar styleClass="cheader">
+         <items>
+            <Label alignment="CENTER" styleClass="chlabel" stylesheets="@loginCss.css" text="Alert" />
+         </items>
+      </ToolBar>
+      <VBox>
+         <children>
+            <HBox alignment="CENTER" prefHeight="201.0" prefWidth="361.0" style="-fx-opacity: 1;" styleClass="chbox" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <children>
+                  <TextArea fx:id="alert_text" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 14;" stylesheets="@loginCss.css" wrapText="true" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="16.0" prefWidth="324.0" styleClass="chbox" VBox.vgrow="NEVER">
+         <children>
+            <Button fx:id="ok_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="cbutton" text="Ok" />
+            <Button fx:id="cancel_button" layoutX="151.0" layoutY="20.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="cbutton" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</fx:root>

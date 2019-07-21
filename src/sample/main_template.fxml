@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="709.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar styleClass="cheader">
+         <items>
+            <Label alignment="CENTER" styleClass="chlabel" stylesheets="@loginCss.css" text="Patient Data" />
+         </items>
+      </ToolBar>
+      <HBox alignment="CENTER" prefHeight="126.0" prefWidth="653.0" style="-fx-opacity: 1;" styleClass="chbox" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox styleClass="chbox">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="549.0" styleClass="chboxbc">
+                     <children>
+                        <GridPane alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="306.0" styleClass="gridbox" HBox.hgrow="ALWAYS">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="65.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="176.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="105.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="185.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="82.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label styleClass="clabel" text="Amount" />
+                              <TextField fx:id="s_name" prefHeight="25.0" prefWidth="173.0" styleClass="mtextfld" GridPane.columnIndex="1" />
+                              <Button fx:id="addbutton" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" styleClass="cbutton" text="Save" GridPane.columnIndex="4" />
+                              <Label layoutX="10.0" layoutY="14.0" prefHeight="20.0" prefWidth="89.0" styleClass="clabel" text="Customer Id" GridPane.columnIndex="2" />
+                              <TextField fx:id="s_name1" layoutX="101.0" layoutY="12.0" prefHeight="25.0" prefWidth="182.0" styleClass="mtextfld" GridPane.columnIndex="3" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </HBox>
+                  <VBox alignment="TOP_CENTER" styleClass="chbox" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll_pane" hbarPolicy="NEVER" prefViewportHeight="126.0" prefViewportWidth="604.0" style="-fx-background-color: white; -fx-border-color: green;" styleClass="chbox" vbarPolicy="ALWAYS" VBox.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="vbox" alignment="TOP_CENTER" maxHeight="-Infinity" prefHeight="380.0" prefWidth="607.0" styleClass="chbox" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</fx:root>

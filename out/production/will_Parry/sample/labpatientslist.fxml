@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="950.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="cheader">
+         <items>
+            <Label styleClass="chlabel" text="Patient For Laboratory" />
+         </items>
+      </ToolBar>
+      <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="950.0" styleClass="chbox">
+         <children>
+            <Button fx:id="ptestbutton" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" styleClass="cbutton" text="Perform Test" />
+            <Button fx:id="deletebutton" mnemonicParsing="false" styleClass="cbutton" text="Delet From List" />
+            <Button fx:id="view_web_id" mnemonicParsing="false" styleClass="cbutton" text="View Result" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="chbox" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="tableview" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+</fx:root>

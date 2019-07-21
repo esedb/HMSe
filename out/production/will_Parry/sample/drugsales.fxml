@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="909.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="cheader">
+        <items>
+            <Label styleClass="chlabel" text="Drug Sales" />
+        </items>
+      </ToolBar>
+      <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="674.0" styleClass="chbox">
+         <children>
+            <Button fx:id="tsbutton" layoutX="155.0" layoutY="38.0" mnemonicParsing="false" styleClass="cbutton" text="Today Sales" />
+            <Button fx:id="sellbutton" mnemonicParsing="false" styleClass="cbutton" text="Sell Drug" />
+            <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="80.0" prefWidth="231.0">
+                     <children>
+                        <GridPane prefHeight="74.0" prefWidth="257.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="80.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="151.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label styleClass="clabel" text="Total Sales" />
+                              <TextField fx:id="totalsalesfld" prefHeight="25.0" prefWidth="155.0" styleClass="mtextfld" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="50.0" prefHeight="175.0" prefWidth="909.0" styleClass="chboxbc">
+         <children>
+            <VBox prefHeight="134.0" prefWidth="342.0" style="-fx-padding: 10 10 10 10; -fx-background-color: white;" styleClass="chbox">
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="164.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label styleClass="clabel" text="Date" />
+                        <Label layoutX="10.0" layoutY="15.0" styleClass="clabel" text="Patient id" GridPane.rowIndex="1" />
+                        <TextField fx:id="patientid" layoutX="56.0" layoutY="13.0" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <DatePicker fx:id="datepicker" prefHeight="25.0" prefWidth="129.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="ptypefld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label layoutX="10.0" layoutY="45.0" styleClass="clabel" text="Patient Type" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="134.0" prefWidth="342.0" style="-fx-padding: 10 10 10 10; -fx-background-color: white;" styleClass="chbox">
+               <children>
+                  <GridPane>
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="85.0" styleClass="clabel" text="Drugs" />
+                        <ChoiceBox fx:id="drugschoice" prefWidth="150.0" styleClass="chboxbc" GridPane.columnIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="81.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="183.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane hgap="5.0" layoutX="20.0" layoutY="54.0">
+                     <children>
+                        <Label styleClass="clabel" text="Quantity" />
+                        <TextField fx:id="quantityfld" styleClass="mtextfld" GridPane.columnIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="0.0" prefWidth="60.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="155.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="33.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="101.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="160.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label styleClass="clabel" text="Quantity Left" />
+                        <TextField fx:id="quantityleftfld" prefHeight="25.0" prefWidth="84.0" styleClass="mtextfld" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox layoutX="360.0" layoutY="10.0" prefHeight="146.0" prefWidth="335.0" style="-fx-padding: 10 10 10 10; -fx-background-color: white;">
+               <children>
+                  <GridPane prefHeight="39.0" prefWidth="254.0">
+                     <children>
+                        <Label styleClass="clabel" text="Unit Cost" />
+                        <TextField fx:id="unitcostfld" prefHeight="25.0" prefWidth="144.0" styleClass="mtextfld" GridPane.columnIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="54.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="139.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane hgap="5.0" layoutX="20.0" layoutY="50.0" prefHeight="40.0" prefWidth="254.0">
+                     <children>
+                        <Label styleClass="clabel" text="Total cost" />
+                        <TextField fx:id="totalcostfld" styleClass="mtextfld" GridPane.columnIndex="1" />
+                        <HBox prefHeight="405.0" prefWidth="909.0" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="0.0" prefWidth="55.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="133.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane hgap="5.0" layoutX="20.0" layoutY="80.0" prefHeight="44.0" prefWidth="254.0">
+                     <children>
+                        <Label styleClass="clabel" text="Sign By" />
+                        <TextField fx:id="signfld" styleClass="mtextfld" GridPane.columnIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="0.0" prefWidth="55.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="133.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox fx:id="tableboxviewer" prefHeight="100.0" prefWidth="200.0" styleClass="chbox" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="tableview" prefHeight="379.0" prefWidth="909.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></HBox>
+   </children>
+</fx:root>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="909.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="cheader">
+        <items>
+            <Label styleClass="chlabel" text="Today Prescription" />
+        </items>
+      </ToolBar>
+      <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="909.0" style="-fx-padding: 10 10 10 10;" styleClass="chbox">
+         <children>
+            <Button fx:id="viewallpatientbutton" layoutX="290.0" layoutY="48.0" mnemonicParsing="false" styleClass="cbutton" text="View All Patient" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="50.0" prefHeight="236.0" prefWidth="909.0" styleClass="chbox" VBox.vgrow="ALWAYS">
+         <children>
+            <SplitPane dividerPositions="0.6736493936052922" prefHeight="160.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+              <items>
+                  <HBox>
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <ToolBar prefHeight="42.0" prefWidth="595.0" styleClass="cheader" HBox.hgrow="ALWAYS">
+                                 <items>
+                                    <Label styleClass="chlabel" text="Non Anti-natal Patients" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="414.0" style="-fx-spacing: 5;">
+                                       <children>
+                                          <Button fx:id="viewnonbutton" layoutX="234.0" layoutY="13.0" mnemonicParsing="false" styleClass="csbutton" text="View Pharmacy Bill" />
+                                          <Button fx:id="nonsalesbutton" mnemonicParsing="false" styleClass="csbutton" text="Sell Drug" />
+                                       </children>
+                                    </HBox>
+                                 </items>
+                              </ToolBar>
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TableView fx:id="nontableview" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <ToolBar prefHeight="24.0" prefWidth="608.0" styleClass="cheader" HBox.hgrow="ALWAYS">
+                                 <items>
+                                    <Label styleClass="chlabel" text="Doctor's Prescription" />
+                                 </items>
+                              </ToolBar>
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextArea fx:id="nontextarea" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+              </items>
+            </SplitPane>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="95.0" prefHeight="236.0" prefWidth="909.0" styleClass="chbox" VBox.vgrow="ALWAYS">
+         <children>
+            <SplitPane dividerPositions="0.6736493936052922" prefHeight="160.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <items>
+                  <HBox>
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <ToolBar prefHeight="43.0" prefWidth="595.0" styleClass="cheader" HBox.hgrow="ALWAYS">
+                                 <items>
+                                    <Label styleClass="chlabel" text="Anti-natal Patients" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="447.0">
+                                       <children>
+                                          <Button fx:id="viewantebutton" mnemonicParsing="false" styleClass="csbutton" text="View Pharmacy Bill" />
+                                          <Button fx:id="antsalesbutton" mnemonicParsing="false" styleClass="csbutton" text="Sell Drug" />
+                                       </children>
+                                    </HBox>
+                                 </items>
+                              </ToolBar>
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TableView fx:id="antitableview" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <ToolBar prefHeight="24.0" prefWidth="608.0" styleClass="cheader" HBox.hgrow="ALWAYS">
+                                 <items>
+                                    <Label styleClass="chlabel" text="Doctor's Prescription" />
+                                 </items>
+                              </ToolBar>
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextArea fx:id="antitextarea" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </items>
+            </SplitPane>
+         </children>
+      </HBox>
+   </children>
+</fx:root>
