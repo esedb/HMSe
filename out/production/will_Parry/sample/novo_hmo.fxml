@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root styleClass="chbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar styleClass="cheader">
+         <items>
+            <Button fx:id="printbutton" mnemonicParsing="false" style="-fx-background-color: white; -fx-text-fill: orange;" text="Print" />
+         </items>
+      </ToolBar>
+      <javafx.scene.layout.VBox fx:id="printPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="978.0" prefWidth="655.0" style="-fx-background-color: white;">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="63.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@HMO_images/Novo%20Health%20Africa%20Ltd.jpg" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Novo Health Africa" />
+                        <Label layoutX="262.0" layoutY="33.0" text="Lagos: 1, Adekola Balogun Street Off Remi Olowude, Lekki Phase 1, Lagos State" />
+                        <Label layoutX="103.0" layoutY="42.0" text="Abuja: Suite 9, 12, Sani Bello Close Zone D, Apo Quarters Abuja" />
+                        <Label layoutX="146.0" layoutY="50.0" text="Port-harcourt: 3rd Floor, BC 15 Mall, 66, Olu Obansanjo Way, Port -Harcourt, Rivers State." />
+                        <Label layoutX="77.0" layoutY="61.0" text="Tel: +234(1)2900047, +234 809 991 3215" />
+                        <Label layoutX="204.0" layoutY="78.0" text="Email: info@novohealthafrica.org  Website: www.novohealthafrica.org" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="655.0">
+               <children>
+                  <HBox prefHeight="31.0" prefWidth="655.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label style="-fx-text-fill: red; -fx-font-size: 16; -fx-font-weight: bold;" text="CLIENT DETAILS" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="31.0" prefWidth="334.0" HBox.hgrow="NEVER">
+                           <children>
+                              <Label style="-fx-text-fill: red; -fx-font-size: 16; -fx-font-weight: bold;" text="CLAIMS FORM" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="193.0" prefWidth="655.0">
+               <children>
+                  <HBox prefHeight="76.0" prefWidth="655.0">
+                     <children>
+                        <GridPane hgap="5.0" vgap="10.0" HBox.hgrow="ALWAYS">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="117.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.0" minWidth="10.0" prefWidth="523.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label style="-fx-text-fill: red; -fx-font-size: 14;" text="Name :" />
+                              <TextField fx:id="nameproviderfld" style="-fx-background-color: white;" GridPane.columnIndex="1" />
+                              <Label style="-fx-text-fill: red; -fx-font-size: 14;" text="Address:" GridPane.rowIndex="1" />
+                              <TextField fx:id="nameofpaymentfld" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="52.0" prefHeight="42.0" prefWidth="600.0">
+                     <children>
+                        <GridPane hgap="5.0" vgap="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-text-fill: red; -fx-font-size: 14;" text="Sex:" />
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 10;" GridPane.columnIndex="1">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="Male" />
+                                    <CheckBox layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Female" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 5;" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="Policy Number:" />
+                                          <TextField />
+                                          <HBox alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="166.0" style="-fx-spacing: 5;">
+                                             <children>
+                                                <Label text="Age:" />
+                                                <TextField prefHeight="25.0" prefWidth="36.0" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="62.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="578.0" minWidth="10.0" prefWidth="578.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="94.0" prefHeight="42.0" prefWidth="600.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <Label text="Provider Details">
+                           <font>
+                              <Font name="Aharoni Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="76.0" prefWidth="655.0">
+                     <children>
+                        <GridPane hgap="5.0" vgap="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-text-fill: red; -fx-font-size: 14;" text="Name of Doctor:" />
+                              <TextField fx:id="nameproviderfld1" style="-fx-background-color: white;" GridPane.columnIndex="1" />
+                              <Label style="-fx-text-fill: red; -fx-font-size: 14;" text="Hospital/Clinic Name" GridPane.rowIndex="1" />
+                              <TextField fx:id="nameofpaymentfld1" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="145.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.0" minWidth="10.0" prefWidth="495.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="99.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.0" minWidth="10.0" prefWidth="283.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="318.0" minWidth="10.0" prefWidth="109.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="157.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Area of Speciality:" />
+                  <Label layoutX="10.0" layoutY="17.0" text="ID Number" GridPane.columnIndex="2" />
+                  <TextField GridPane.columnIndex="1" />
+                  <TextField GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <HBox prefHeight="69.0" prefWidth="655.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="60.0" prefWidth="205.0">
+                     <children>
+                        <Line endX="100.0" startX="-100.0" />
+                        <Label text="Signature" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                        <VBox alignment="CENTER" prefHeight="60.0" prefWidth="205.0">
+                           <children>
+                              <Line endX="100.0" startX="-100.0" />
+                              <Label text="Date" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="160.0" prefWidth="655.0">
+               <children>
+                  <HBox prefHeight="39.0" prefWidth="655.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="655.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="TREATMENT DETAILS" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <GridPane>
+                           <children>
+                              <Label text="Date of Service" />
+                              <Label layoutX="10.0" layoutY="17.0" text="Duration of treatment" GridPane.columnIndex="2" />
+                              <TextField GridPane.columnIndex="1" />
+                              <TextField GridPane.columnIndex="3" />
+                              <Label layoutX="10.0" layoutY="42.0" text="Diagnosis" GridPane.rowIndex="1" />
+                              <TextField layoutX="109.0" layoutY="38.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label layoutX="10.0" layoutY="123.0" text="Treatment given" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <TextField layoutX="109.0" layoutY="119.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <Label layoutX="10.0" layoutY="83.0" text="Treatment Code:" GridPane.rowIndex="2" />
+                              <TextField layoutX="109.0" layoutY="79.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label layoutX="10.0" layoutY="136.0" text="Referral Code:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <TextField layoutX="109.0" layoutY="132.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="99.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.0" minWidth="10.0" prefWidth="261.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="318.0" minWidth="10.0" prefWidth="131.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="157.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </javafx.scene.layout.VBox>
+   </children>
+</fx:root>

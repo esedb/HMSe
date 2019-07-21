@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="888.0" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="cheader">
+        <items>
+            <Label styleClass="chlabel" text="Patient Prescription" />
+        </items>
+      </ToolBar>
+      <HBox layoutX="10.0" layoutY="150.0" prefHeight="157.0" prefWidth="888.0" styleClass="chbox">
+         <children>
+            <GridPane prefHeight="172.0" prefWidth="230.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="80.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="149.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label styleClass="clabel" text="Patient id" />
+                  <TextField fx:id="patientidfld" styleClass="mtextfld" GridPane.columnIndex="1" />
+                  <Label layoutX="10.0" layoutY="31.0" styleClass="clabel" text="Other name" GridPane.rowIndex="2" />
+                  <Label layoutX="10.0" layoutY="31.0" styleClass="clabel" text="Surname" GridPane.rowIndex="1" />
+                  <TextField fx:id="surnamefld" layoutX="110.0" layoutY="27.0" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="othernamefld" layoutX="110.0" layoutY="84.0" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="20.0" layoutY="20.0" prefHeight="172.0" prefWidth="230.0">
+               <children>
+                  <Label styleClass="clabel" text="Doctor" />
+                  <TextField fx:id="doctorfld" styleClass="mtextfld" GridPane.columnIndex="1" />
+                  <Label layoutX="10.0" layoutY="31.0" styleClass="clabel" text="Date" GridPane.rowIndex="1" />
+                  <DatePicker fx:id="datepicker" prefHeight="25.0" prefWidth="117.0" styleClass="datepicker" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="80.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="149.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane layoutX="260.0" layoutY="20.0" prefHeight="147.0" prefWidth="370.0" styleClass="gridbox">
+               <children>
+                  <Label styleClass="clabel" text="Prescription" />
+                  <TextArea fx:id="prescriptiontxa" prefHeight="200.0" prefWidth="200.0" styleClass="mtextfld" GridPane.columnIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="92.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" prefWidth="273.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="161.0" prefHeight="54.0" prefWidth="888.0" styleClass="chboxbc">
+         <children>
+            <Button fx:id="savebutton" mnemonicParsing="false" styleClass="cbutton" text="Save" />
+            <Button id="printbutton" fx:id="printbutton" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" styleClass="cbutton" text="Print" />
+            <Button fx:id="clearbutton" layoutX="71.0" layoutY="20.0" mnemonicParsing="false" styleClass="cbutton" text="Clear Form" />
+            <Button fx:id="reloadbutton" layoutX="468.0" layoutY="25.0" mnemonicParsing="false" styleClass="cbutton" text="Reload " />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="243.0" prefHeight="152.0" prefWidth="888.0" styleClass="chbox" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="tableview" prefHeight="236.0" prefWidth="866.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+</fx:root>

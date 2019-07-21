@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="709.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar styleClass="cheader">
+         <items>
+            <Label fx:id="t_name" alignment="CENTER" styleClass="chlabel" stylesheets="@loginCss.css" text="Template" />
+         </items>
+      </ToolBar>
+      <HBox alignment="CENTER" prefHeight="126.0" prefWidth="653.0" style="-fx-opacity: 1;" styleClass="chbox" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox styleClass="chbox">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="549.0" styleClass="chboxbc">
+                     <children>
+                        <GridPane alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="306.0" styleClass="gridbox" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label styleClass="clabel" text="Customer ID" />
+                              <TextField fx:id="id_field" prefHeight="25.0" prefWidth="105.0" styleClass="mtextfld" GridPane.columnIndex="1" />
+                              <Label layoutX="10.0" layoutY="14.0" styleClass="clabel" text="Amount" GridPane.columnIndex="2" />
+                              <TextField fx:id="amountfld" styleClass="mtextfld" GridPane.columnIndex="3" />
+                              <Button fx:id="save_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" styleClass="cbutton" text="Save" GridPane.columnIndex="4" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="105.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="161.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="63.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="168.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="126.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </HBox>
+                  <VBox alignment="TOP_CENTER" styleClass="chbox" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll_pane" hbarPolicy="NEVER" prefViewportHeight="126.0" prefViewportWidth="604.0" style="-fx-background-color: white; -fx-border-color: green;" styleClass="chbox" vbarPolicy="ALWAYS" VBox.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="vbox" alignment="TOP_CENTER" maxHeight="-Infinity" prefHeight="380.0" prefWidth="607.0" styleClass="chbox" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</fx:root>

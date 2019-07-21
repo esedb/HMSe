@@ -1,0 +1,122 @@
+              .hbox1 {
+	            -fx-background-color:green;
+	            -fx-background-repeat: no-repeat;
+                  }
+             .hbox2 {
+          	    -fx-background-color: green;
+              	}
+            .borderpane{
+          	    -fx-background-repeat: no-repeat;
+          	    -fx-background-color: white;
+          	    -fx-background-image: url("photos/genesis_background.jpg");
+          	    -fx-background-size: cover;
+
+          	    }
+          	.serial{
+                -fx-background-repeat: no-repeat;
+                -fx-background-color: white;
+                -fx-background-image: url("photos/green_trans.png");
+                -fx-background-size: cover;
+
+                }
+
+          	.dslabel1{
+          	    -fx-font-weight: bold;
+
+            	-fx-text-fill: white;
+          	    -fx-font-size: 24;
+                  	}
+          	.dslabel{
+          	    -fx-font-size: 16;
+          	        }
+          	.datepicker{
+          	    -fx-background-color: green;
+              	}
+          	.cbutton{
+          	    -fx-background-color: #5CB002;
+          	    -fx-text-fill: white;
+          	    -fx-background-radius: 0;
+          	    }
+          	 .cbutton:hover{
+                -fx-background-color: white;
+                -fx-text-fill: #5CB002;
+                -fx-border-color: #5CB002;
+                }
+             .csbutton{
+                 -fx-background-color: white;
+                 -fx-text-fill: #5CB002;
+                 -fx-border-color: #5CB002;
+                }
+
+             .csbutton:hover{
+                 -fx-background-color: #5CB002;
+                 -fx-text-fill: white;
+                 -fx-border-color: white;
+                }
+
+
+          	.cheader{
+          	    -fx-background-color: #5CB002;
+          	    }
+          	    .chlabel{
+          	    -fx-text-fill: white;
+          	    -fx-font-size: 16
+          	    }
+          	.clabel{
+          	    -fx-text-fill: #5CB002;
+          	    -fx-font-size: 16;
+          	    -fx-fill: #5CB002;
+          	    -fx-font-family: MS Mincho;
+          	    -fx-text-alignment: left;
+
+          	   }
+            .chbox{
+               -fx-background-color: white;
+               -fx-spacing: 10;
+               -fx-padding: 5 5 5 5;
+
+
+
+                }
+            .chboxbc{
+                -fx-background-color: white;
+                -fx-spacing: 10;
+                -fx-padding: 5 5 5 5;
+                -fx-border-color: #5CB002;
+
+
+             }
+            .ctextfld{
+                -fx-border-color: red;
+             }
+             .mtextfld{
+             -fx-border-style: solid;
+             -fx-background-radius: 0;
+             -fx-border-width: 0.0;
+
+             }
+            .cdatepicker{
+                -fx-background-color: green;
+            }
+            .tilebutton{
+
+
+            }
+            .mainbox{
+            -fx-effect: dropshadow(three-pass-box, derive(#5CB002, -20%), 10, 0, 4, 4);
+            -fx-background-color: white;
+            -fx-background-radius: 10;
+
+              }
+            .menucolor{
+            -fx-base: white;
+            -fx-text-fill: white;
+            }
+            .gridbox{
+            -fx-hgap: 5;
+            -fx-vgap: 5;
+            }
+            .bcontainer{
+            -fx-spacing: 5;
+            }
+

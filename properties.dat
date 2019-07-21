@@ -1,0 +1,7 @@
+#Admin Properties
+#Thu Jul 27 20:32:11 PDT 2017
+dbase_username=root
+Admin_password=password@1
+dbase_url=jdbc:mysql://localhost:3306/hmse?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+dbase_password=password@1
+admin_username=Administrator

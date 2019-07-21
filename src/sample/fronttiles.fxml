@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root alignment="CENTER" hgap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefTileHeight="130.0" prefTileWidth="190.0" prefWidth="955.0" stylesheets="@loginCss.css" type="javafx.scene.layout.TilePane" vgap="30.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="patient_reg_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="125.0" prefWidth="190.0" styleClass="tilebutton">
+         <graphic>
+            <ImageView fitHeight="119.0" fitWidth="186.0">
+               <image>
+                  <Image url="@photos/patient_registration.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="staff_entry_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="125.0" prefWidth="190.0" styleClass="tilebutton">
+         <graphic>
+            <ImageView fitHeight="129.0" fitWidth="163.0">
+               <image>
+                  <Image url="@photos/staff_entry_key_content.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="viewll_all_patbutton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="125.0" prefWidth="190.0" styleClass="tilebutton">
+         <graphic>
+            <ImageView fitHeight="113.0" fitWidth="172.0">
+               <image>
+                  <Image url="@photos/all_patient.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="in_patient_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="125.0" prefWidth="190.0" styleClass="tilebutton">
+         <graphic>
+            <ImageView fitHeight="128.0" fitWidth="177.0">
+               <image>
+                  <Image url="@photos/in_patient2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="out_patientbutton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="125.0" prefWidth="190.0" styleClass="tilebutton">
+         <graphic>
+            <ImageView fitHeight="128.0" fitWidth="191.0">
+               <image>
+                  <Image url="@photos/out_patient.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="anti_natal_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="125.0" prefWidth="190.0" styleClass="tilebutton">
+         <graphic>
+            <ImageView fitHeight="123.0" fitWidth="190.0">
+               <image>
+                  <Image url="@photos/antenatal.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="nonantenatalbutton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="125.0" prefWidth="190.0" styleClass="tilebutton">
+         <graphic>
+            <ImageView fitHeight="125.0" fitWidth="189.0">
+               <image>
+                  <Image url="@photos/staff_entry.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="hmobutton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="125.0" prefWidth="190.0" styleClass="tilebutton">
+         <graphic>
+            <ImageView fitHeight="119.0" fitWidth="144.0">
+               <image>
+                  <Image url="@photos/hmo_pic.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="paymentbutton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="125.0" prefWidth="190.0" styleClass="tilebutton">
+         <graphic>
+            <ImageView fitHeight="122.0" fitWidth="183.0">
+               <image>
+                  <Image url="@photos/cash_payment.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <styleClass>
+      <String fx:value="chbox" />
+      <String fx:value="mainbox" />
+   </styleClass>
+</fx:root>

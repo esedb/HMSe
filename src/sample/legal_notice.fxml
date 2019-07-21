@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="405.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="cheader">
+         <items>
+            <Label styleClass="chlabel" text="Legal notice" />
+         </items>
+      </ToolBar>
+      <TextArea fx:id="legal_area" editable="false" prefHeight="273.0" prefWidth="509.0" style="-fx-font-size: 14;" text="All rights reserved, no part of this software should be stored, copied or used without the prior permission of the creator Eseltech.&#10;&#10;" wrapText="true" VBox.vgrow="ALWAYS" />
+   </children>
+</fx:root>

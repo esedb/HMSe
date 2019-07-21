@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root styleClass="chbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar styleClass="cheader">
+         <items>
+            <Button fx:id="printbutton" mnemonicParsing="false" style="-fx-background-color: white; -fx-text-fill: orange;" text="Print" />
+         </items>
+      </ToolBar>
+      <javafx.scene.layout.VBox fx:id="printPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="978.0" prefWidth="655.0" style="-fx-background-color: white;">
+         <children>
+            <HBox prefHeight="49.0" prefWidth="600.0" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="63.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="94.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@HMO_images/sterling_logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="69.0" prefWidth="600.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label style="-fx-text-fill: red; -fx-font-size: 16; -fx-font-weight: bold;" text="STERLING HEALTH MANAGED CARE SERVICES LIMITED" />
+                        <Label style="-fx-text-fill: red;" text="Health Maintenance Organization (HMO)" />
+                        <Label layoutX="202.0" layoutY="27.0" style="-fx-text-fill: red;" text="HQ: Valley View Plaza 99. Opebi Road. Ikeja, Lagos. Tel: 01-2790698, 7362040, 08023020934 Fax: 01-2790699" />
+                        <Label layoutX="202.0" layoutY="27.0" style="-fx-text-fill: red;" text="Email: info@sterlinghealthmcs.com  Website: www.sterlinghealthmcs.com" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="78.0" prefWidth="600.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="49.0" prefWidth="135.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: red;">
+                           <children>
+                              <Label style="-fx-text-fill: white; -fx-font-size: 17; -fx-font-weight: bold;" text="CLAIMS FORM" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="193.0" prefWidth="655.0">
+               <children>
+                  <HBox prefHeight="42.0" prefWidth="600.0">
+                     <children>
+                        <GridPane hgap="5.0" vgap="10.0" HBox.hgrow="ALWAYS">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="120.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="224.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="107.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="139.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label style="-fx-text-fill: red; -fx-font-size: 14;" text="Name of Provider" />
+                              <TextField fx:id="nameproviderfld" style="-fx-background-color: white;" GridPane.columnIndex="1" />
+                              <Label layoutX="10.0" layoutY="19.0" style="-fx-text-fill: red; -fx-font-size: 14;" text="Registration No" GridPane.columnIndex="2" />
+                              <TextField fx:id="registrationfld" style="-fx-background-color: white;" GridPane.columnIndex="3" />
+                           </children>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="600.0">
+                     <children>
+                        <GridPane hgap="5.0" vgap="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-text-fill: red; -fx-font-size: 14;" text="Name of Patient" />
+                              <TextField fx:id="nameofpaymentfld" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: white;" GridPane.columnIndex="1" />
+                              <Label layoutX="10.0" layoutY="19.0" style="-fx-text-fill: red; -fx-font-size: 14;" text="Age" GridPane.columnIndex="2" />
+                              <TextField fx:id="agefld" style="-fx-background-color: white;" GridPane.columnIndex="3" />
+                              <Label layoutX="175.0" layoutY="16.0" style="-fx-text-fill: red; -fx-font-size: 14;" text="ID No:" GridPane.columnIndex="4" />
+                              <TextField fx:id="idnofld" style="-fx-background-color: white;" GridPane.columnIndex="5" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="120.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="221.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="32.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="38.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="47.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="108.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="52.0" prefHeight="42.0" prefWidth="600.0">
+                     <children>
+                        <GridPane hgap="5.0" vgap="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-text-fill: red; -fx-font-size: 14;" text="Date of Notification" />
+                              <TextField fx:id="dateofnotifld" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: white;" GridPane.columnIndex="1" />
+                              <Label layoutX="10.0" layoutY="19.0" style="-fx-text-fill: red; -fx-font-size: 14;" text="Date of Admission" GridPane.columnIndex="2" />
+                              <TextField fx:id="dateofadminfld" style="-fx-background-color: white;" GridPane.columnIndex="3" />
+                              <Label layoutX="175.0" layoutY="16.0" style="-fx-text-fill: red; -fx-font-size: 14;" text="Date of Discharge" GridPane.columnIndex="4" />
+                              <TextField fx:id="dischargefld" style="-fx-background-color: white;" GridPane.columnIndex="5" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="120.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="72.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="122.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="71.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="117.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="64.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="94.0" prefHeight="42.0" prefWidth="600.0">
+                     <children>
+                        <GridPane hgap="5.0" vgap="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-text-fill: red; -fx-font-size: 14;" text="Diagnosis" />
+                              <TextField prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: white;" GridPane.columnIndex="1" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="85.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="500.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="503.0" prefWidth="655.0">
+               <children>
+                  <AnchorPane prefHeight="484.0" prefWidth="655.0" HBox.hgrow="NEVER" VBox.vgrow="NEVER">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="51.0" prefHeight="36.0" prefWidth="482.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label style="-fx-font-weight: bold; -fx-font-size: 14;" text="DETAILS OF TREATMENT" />
+                           </children>
+                        </HBox>
+                        <VBox layoutX="531.0" prefHeight="378.0" prefWidth="101.0" style="-fx-border-color: black;">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="35.0" prefWidth="115.0" style="-fx-border-color: black;">
+                                 <children>
+                                    <Label style="-fx-font-weight: bold; -fx-font-size: 14;" text="COST (N)" />
+                                 </children>
+                              </HBox>
+                              <VBox alignment="CENTER" prefHeight="315.0" prefWidth="99.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label fx:id="costlabel" text="COST" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <HBox layoutX="51.0" layoutY="36.0" prefHeight="76.0" prefWidth="482.0" style="-fx-border-color: black;">
+                           <children>
+                              <GridPane hgap="5.0" vgap="10.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label style="-fx-text-fill: red; -fx-font-size: 14;" text="Accomodation N:" />
+                                    <TextField fx:id="accomodationfld" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: white;" GridPane.columnIndex="1" />
+                                    <Label layoutX="10.0" layoutY="19.0" style="-fx-text-fill: red; -fx-font-size: 14;" text="for" GridPane.columnIndex="2" />
+                                    <TextField fx:id="accodays" style="-fx-background-color: white;" GridPane.columnIndex="3" />
+                                    <Label layoutX="175.0" layoutY="16.0" style="-fx-text-fill: red; -fx-font-size: 14;" text="days" GridPane.columnIndex="4" />
+                                    <Label layoutX="10.0" layoutY="16.0" style="-fx-text-fill: red; -fx-font-size: 14;" text="Feeding of N:" GridPane.rowIndex="1" />
+                                    <TextField fx:id="feedingfld" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label layoutX="350.0" layoutY="16.0" style="-fx-text-fill: red; -fx-font-size: 14;" text="for" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <TextField fx:id="feedingdaysfld" style="-fx-background-color: white;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Label layoutX="449.0" layoutY="16.0" style="-fx-text-fill: red; -fx-font-size: 14;" text="days" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="120.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="210.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="22.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="67.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="40.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </GridPane>
+                           </children>
+                        </HBox>
+                        <VBox layoutX="51.0" layoutY="110.0" prefHeight="268.0" prefWidth="482.0" style="-fx-border-color: black;">
+                           <children>
+                              <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="177.0" prefWidth="462.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="148.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold; -fx-font-size: 14;" text="DRUGS/INFUSION" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold; -fx-font-size: 14;" text="DOSAGE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="164.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold; -fx-font-size: 14;" text="DURATION" />
+                                       </children>
+                                    </HBox>
+                                    <TextFlow prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <children>
+                                          <Text fx:id="dosagetxt" strokeType="OUTSIDE" strokeWidth="0.0" text="DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </TextFlow>
+                                    <TextFlow layoutX="10.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <children>
+                                          <Text fx:id="durationtext" strokeType="OUTSIDE" strokeWidth="0.0" text="DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </TextFlow>
+                                    <TextFlow prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <Text fx:id="drugtxt" strokeType="OUTSIDE" strokeWidth="0.0" text="DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </TextFlow>
+                                 </children>
+                              </GridPane>
+                              <GridPane prefHeight="90.0" prefWidth="460.0" vgap="5.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="153.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.0" minWidth="10.0" prefWidth="309.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <HBox>
+                                       <children>
+                                          <Label style="-fx-font-size: 13;" text="Investigations and results" />
+                                       </children>
+                                    </HBox>
+                                    <Label style="-fx-font-size: 13;" text="Professional fees" GridPane.rowIndex="1" />
+                                    <TextFlow prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <Text fx:id="investigationtxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Investigationlkkkkkkkkkkkkkkkkkkkkkkkkkkk" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextField fx:id="professionfeesfld" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" layoutX="532.0" layoutY="378.0" prefHeight="35.0" prefWidth="99.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label fx:id="moneyfld" style="-fx-font-weight: bold; -fx-font-size: 14;" text="MONEY" />
+                           </children>
+                        </HBox>
+                        <Label layoutX="453.0" layoutY="386.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="TOTAL(N)" />
+                        <HBox layoutX="28.0" layoutY="439.0" prefHeight="37.0" prefWidth="600.0" style="-fx-spacing: 40;">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="31.0" layoutY="432.0" prefHeight="37.0" prefWidth="161.0">
+                                 <children>
+                                    <Line endX="60.0" layoutX="131.5" layoutY="432.5" startX="-100.0" />
+                                    <Label text="Provider's Sign" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="161.0">
+                                 <children>
+                                    <Line endX="60.0" layoutX="131.5" layoutY="432.5" startX="-100.0" />
+                                    <Label text="Patient's Sign" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="171.0" layoutY="10.0" prefHeight="37.0" prefWidth="161.0">
+                                 <children>
+                                    <Line endX="60.0" layoutX="131.5" layoutY="432.5" startX="-100.0" />
+                                    <Label text="Sterling Health's Officer Sign" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </javafx.scene.layout.VBox>
+   </children>
+</fx:root>
