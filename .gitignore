@@ -7,6 +7,7 @@
 *.o
 *.obj
 *.class
+*.jar
 
 # Precompiled Headers
 *.gch
