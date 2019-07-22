@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1254.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar styleClass="cheader">
+         <items>
+            <Label alignment="CENTER" style="-fx-text-fill: white;" styleClass="chlabel" text="Antenatal Records">
+               <font>
+                  <Font name="Andalus" size="34.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <HBox alignment="CENTER" prefHeight="423.0" prefWidth="1254.0" styleClass="chbox">
+         <children>
+            <GridPane alignment="CENTER" hgap="10.0" prefHeight="412.0" prefWidth="394.0" styleClass="gridbox">
+               <children>
+                  <Label styleClass="clabel" text="Surname" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="clabel" text="Othername" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="clabel" text="Gravida" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="patientidfld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="surnamefld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label styleClass="clabel" text="Para" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="agefld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label styleClass="clabel" text="LCB" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="gravidafld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label layoutX="20.0" layoutY="63.0" styleClass="clabel" text="Date of Booking">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="259.0" styleClass="clabel" text="Special Circumstances" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="parafld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label layoutX="20.0" layoutY="103.0" styleClass="clabel" text="Age" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="othernamefld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label styleClass="clabel" text="Patient id" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dateofbooking" prefHeight="25.0" prefWidth="118.0" styleClass="datepicker" GridPane.columnIndex="1" />
+                  <TextField fx:id="lcbfld" layoutX="168.0" layoutY="249.0" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextArea fx:id="specialcirfld" prefHeight="200.0" prefWidth="200.0" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="10.0" prefWidth="130.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="203.0" />
+               </columnConstraints>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="46.0" minHeight="8.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane alignment="CENTER" layoutX="212.0" layoutY="10.0" prefHeight="403.0" prefWidth="374.0" styleClass="gridbox">
+               <children>
+                  <Label styleClass="clabel" text="GA @ Booking" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="clabel" text="Labour">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="labourfld" styleClass="mtextfld" GridPane.columnIndex="1" />
+                  <Label styleClass="clabel" text="LMP" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="clabel" text="Type of Delivery" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="259.0" styleClass="clabel" text="OG / Surgical" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="186.0" styleClass="clabel" text="EDD" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="clabel" text="Menstraul Duration" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="menstraulfld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label styleClass="clabel" text="Previous Surgery" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="prevsurfld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label styleClass="clabel" text="Previous Medical History" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="deliverychoice" prefWidth="150.0" styleClass="chboxbc" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <DatePicker fx:id="lmpfld" prefHeight="25.0" prefWidth="137.0" styleClass="datepicker" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="gabookingfld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="ogfld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextArea fx:id="medhistxa" prefHeight="200.0" prefWidth="200.0" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField fx:id="eddfld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.0" minWidth="10.0" prefWidth="183.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="165.0" />
+               </columnConstraints>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <rowConstraints>
+                  <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </GridPane>
+            <GridPane prefHeight="410.0" prefWidth="297.0" styleClass="gridbox">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="115.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="163.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label styleClass="clabel" text="Antenatal code">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="antecodefld" styleClass="mtextfld" GridPane.columnIndex="1" />
+                  <Label layoutX="10.0" layoutY="23.0" styleClass="clabel" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="signbyfld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label styleClass="clabel" text="Data Entry By" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="113.0" styleClass="clabel" text="Menarche" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="menarchefld" styleClass="mtextfld" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <VBox prefHeight="403.0" prefWidth="155.0" styleClass="chbox">
+               <children>
+                  <Button fx:id="lrecordbutton" mnemonicParsing="false" styleClass="cbutton" text="Load All records" />
+                  <Button fx:id="rprevbutton" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" styleClass="cbutton" text="Previous" />
+                  <Button fx:id="rnextbutton" layoutX="20.0" layoutY="55.0" mnemonicParsing="false" styleClass="cbutton" text="Next " />
+                  <Button fx:id="labourbutton" layoutX="20.0" layoutY="90.0" mnemonicParsing="false" styleClass="cbutton" text="Labour" />
+                  <Button fx:id="savebutton" layoutX="20.0" layoutY="125.0" mnemonicParsing="false" styleClass="cbutton" text="Save" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </HBox>
+      <VBox />
+      <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ToolBar styleClass="cheader">
+               <items>
+                  <Label alignment="CENTER" style="-fx-text-fill: white;" styleClass="chlabel" text="Examinatoin Update">
+                     <font>
+                        <Font name="Andalus" size="34.0" />
+                     </font>
+                  </Label>
+               </items>
+            </ToolBar>
+            <HBox prefHeight="157.0" prefWidth="1254.0" styleClass="chbox" VBox.vgrow="ALWAYS">
+               <children>
+                  <GridPane prefHeight="203.0" prefWidth="323.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="128.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="190.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label styleClass="clabel" text="Examination Date">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="examdate" prefHeight="25.0" prefWidth="133.0" GridPane.columnIndex="1" />
+                        <Label layoutX="10.0" layoutY="34.0" styleClass="clabel" text="Weight" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="102.0" styleClass="clabel" text="Dedema" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="128.0" styleClass="clabel" text="Presentation" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="143.0" styleClass="clabel" text="Lab Exam." GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="weightfld" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="dedemafld" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="presentationfld" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextArea fx:id="labexamtxa" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="20.0" layoutY="20.0" prefHeight="203.0" prefWidth="323.0">
+                     <children>
+                        <Label styleClass="clabel" text="EGA Weeks">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="34.0" styleClass="clabel" text="BPmm" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="102.0" styleClass="clabel" text="SFH" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="128.0" styleClass="clabel" text="Attitude" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="143.0" styleClass="clabel" text="Ultrasound" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="bpmmfld" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="sfhfld" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="attitudefld" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextArea fx:id="ultrasoundfld" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="gaweeksfld" GridPane.columnIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="128.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="190.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane layoutX="353.0" layoutY="20.0" prefHeight="203.0" prefWidth="323.0">
+                     <children>
+                        <Label styleClass="clabel" text="Temp">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="34.0" styleClass="clabel" text="B/ P" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="102.0" styleClass="clabel" text="Lie" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="128.0" styleClass="clabel" text="Foetal Heart" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="143.0" styleClass="clabel" text="Clinical information" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="bpfld" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="lieffld" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="foetalfld" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextArea fx:id="clinicalinfotxa" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="tmpfld" layoutX="143.0" layoutY="47.0" GridPane.columnIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="128.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="190.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane layoutX="686.0" layoutY="20.0" prefHeight="203.0" prefWidth="323.0">
+                     <children>
+                        <Label styleClass="clabel" text="Signature">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="signaturefld" layoutX="143.0" layoutY="47.0" GridPane.columnIndex="1" />
+                        <Button fx:id="loadallbutton" mnemonicParsing="false" styleClass="cbutton" text="Load all" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button fx:id="prevbutton" layoutX="129.0" layoutY="47.0" mnemonicParsing="false" styleClass="cbutton" text="Previous" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="nextbutton" layoutX="129.0" layoutY="84.0" mnemonicParsing="false" styleClass="cbutton" text="Next" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button fx:id="addnewbutton" layoutX="129.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" styleClass="cbutton" text="Add new" GridPane.rowIndex="4" />
+                        <Button fx:id="savebutton2" layoutX="10.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" styleClass="cbutton" text="Save" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="128.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="190.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+
+      </fx:root>

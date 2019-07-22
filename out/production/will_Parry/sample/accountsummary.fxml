@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="1205.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="cheader">
+         <items>
+            <Label styleClass="chlabel" text="Account Summary" />
+         </items>
+      </ToolBar>
+      <HBox prefHeight="49.0" prefWidth="950.0" styleClass="chbox">
+         <children>
+            <Button fx:id="printbutton" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" styleClass="cbutton" text="Print" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="chboxbc" VBox.vgrow="ALWAYS">
+         <children>
+            <WebView fx:id="webview" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+</fx:root>

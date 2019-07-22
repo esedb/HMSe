@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="405.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="cheader">
+         <items>
+            <Label styleClass="chlabel" text="Contact us" />
+         </items>
+      </ToolBar>
+      <TextArea fx:id="contact_area" editable="false" prefHeight="273.0" prefWidth="509.0" style="-fx-font-size: 14;" text="Address:&#10;No. 72 Iyra Road Wari, Delta State, Nigeria.&#10;&#10;Email:&#10;esedonpedro@gmail.com&#10;&#10;Web:&#10;eseltech.com.ng&#10;&#10;" wrapText="true" VBox.vgrow="ALWAYS" />
+   </children>
+</fx:root>

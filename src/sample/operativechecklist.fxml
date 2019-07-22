@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="888.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="cheader">
+        <items>
+            <Label styleClass="chlabel" text="Patients Pre-Operative Checklist" />
+        </items>
+      </ToolBar>
+      <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="888.0" styleClass="chbox">
+         <children>
+            <Button fx:id="vpobutton" mnemonicParsing="false" styleClass="cbutton" text="View Pre-Operative Checklist" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="35.0" prefWidth="888.0" style="-fx-spacing: 5; -fx-padding: 5;" styleClass="cheader">
+         <children>
+            <Label styleClass="chlabel" text="Patient" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 10;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="pabutton" mnemonicParsing="false" styleClass="csbutton" text="View Operative Checklist" />
+                  <Label styleClass="chlabel" text="Surname" />
+                  <TextField fx:id="patientsearchfld" styleClass="mtextfld" />
+                  <Label style="-fx-text-fill: white;" styleClass="clabel" text="Total" />
+                  <TextField fx:id="nontotalfld" styleClass="mtextfld" />
+                  <Button fx:id="parefreshbutton" layoutX="676.0" layoutY="10.0" mnemonicParsing="false" styleClass="csbutton" text="Refresh" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="150.0" prefHeight="152.0" prefWidth="888.0" styleClass="chbox" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="nontableview" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="888.0" style="-fx-spacing: 5; -fx-padding: 5;" styleClass="cheader">
+         <children>
+            <Label styleClass="chlabel" text="Antenatal" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 10;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="antbutton" mnemonicParsing="false" styleClass="csbutton" text="View Operative Checklist" />
+                  <Label styleClass="chlabel" text="Surname" />
+                  <TextField fx:id="antenatalsearchfld" styleClass="mtextfld" />
+                  <Label style="-fx-text-fill: white;" styleClass="clabel" text="Total" />
+                  <TextField fx:id="antitotalfld" styleClass="mtextfld" />
+                  <Button fx:id="anterefreshbutton" layoutX="658.0" layoutY="10.0" mnemonicParsing="false" styleClass="csbutton" text="Refresh" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="161.0" prefHeight="152.0" prefWidth="888.0" styleClass="chbox" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="antitableview" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+</fx:root>

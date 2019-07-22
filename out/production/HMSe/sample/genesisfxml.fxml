@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root prefHeight="600.0" prefWidth="900.0" styleClass="borderpane" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox VBox.vgrow="ALWAYS">
+            <children>
+                <VBox opacity="0.8" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <BorderPane fx:id="geneborderpane" prefHeight="200.0" prefWidth="200.0" styleClass="borderpane" stylesheets="@loginCss.css" VBox.vgrow="ALWAYS">
+                            <bottom>
+                                <HBox alignment="CENTER" prefHeight="27.0" prefWidth="900.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" style="-fx-padding: 2;" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label fx:id="logonname" alignment="CENTER" layoutX="364.0" layoutY="10.0" styleClass="clabel" text="Login Username" HBox.hgrow="SOMETIMES">
+                                                    <font>
+                                                        <Font name="Mongolian Baiti" size="16.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label fx:id="bottomtext" alignment="CENTER" styleClass="clabel" text="Esel Tech.">
+                                                    <font>
+                                                        <Font name="Mongolian Baiti" size="16.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <ImageView fx:id="homebutton" fitHeight="27.0" fitWidth="28.0">
+                                                    <image>
+                                                        <Image url="@photos/home_orange.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                            </bottom>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <top>
+                                <MenuBar fx:id="menubar" focusTraversable="false" styleClass="context-menu" BorderPane.alignment="CENTER">
+                                    <menus>
+                                        <Menu fx:id="system_menu" mnemonicParsing="false" styleClass="menucolor" text="System Task">
+                                            <items>
+                                                <MenuItem fx:id="change_password" mnemonicParsing="false" onAction="#changePassword" text="Change Password" />
+                                                <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#logOutAction" text="Log Out" />
+                                                <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitAction" text="Exit" />
+                                            </items>
+                                        </Menu>
+                                        <Menu fx:id="nurse_menu" mnemonicParsing="false" styleClass="menucolor" text="Nurse">
+                                            <items>
+                                                <MenuItem mnemonicParsing="false" onAction="#birthInfoAction" text="Birth Information" />
+                                                <Menu mnemonicParsing="false" text="Patient">
+                                                    <items>
+                                                        <MenuItem mnemonicParsing="false" onAction="#inPatientAction" text="In Patients" />
+                                                        <MenuItem mnemonicParsing="false" onAction="#outPatientsAction" text="Out Patients" />
+                                                    </items>
+                                                </Menu>
+                                                <Menu mnemonicParsing="false" text="Discharge">
+                                                    <items>
+                                                        <MenuItem mnemonicParsing="false" onAction="#dischargeAction" text="Discharge Patient" />
+                                                    </items>
+                                                </Menu>
+                                                <MenuItem fx:id="createTemplate1" mnemonicParsing="false" onAction="#createTemplate_Action" text="Create Template" />
+                                                <MenuItem mnemonicParsing="false" onAction="#openTemplate_Action" text="Open Templates" />
+                                            </items>
+                                        </Menu>
+                                        <Menu fx:id="human_menu" mnemonicParsing="false" styleClass="menucolor" text="Human Resource">
+                                            <items>
+                                                <Menu mnemonicParsing="false" text="Patient attendance">
+                                                    <items>
+                                                        <MenuItem mnemonicParsing="false" onAction="#nonAntenatalAction" text="Patient" />
+                                                        <MenuItem mnemonicParsing="false" onAction="#antenatalAction" text="Antenatal" />
+                                                    </items>
+                                                </Menu>
+                                                <MenuItem fx:id="doctors_staff" mnemonicParsing="false" onAction="#staffListAction" text="Doctors and Staff" />
+                                                <MenuItem fx:id="searchPatient" mnemonicParsing="false" onAction="#searchPatientAction" text="Search Patients" />
+                                                <MenuItem mnemonicParsing="false" onAction="#birthSearchAction" text="All Birth's" />
+                                            </items>
+                                        </Menu>
+                                        <Menu fx:id="medic_menu" mnemonicParsing="false" styleClass="menucolor" text="Medical Records">
+                                            <items>
+                                                <MenuItem fx:id="viewallpatients" mnemonicParsing="false" onAction="#viewAllPatietsAction" text="View All Patient" />
+                                                <MenuItem fx:id="patientReg" mnemonicParsing="false" onAction="#patientRegAction" text="Patient Registration" />
+                                            </items>
+                                        </Menu>
+                                        <Menu fx:id="doctor_menu" mnemonicParsing="false" styleClass="menucolor" text="Doctor">
+                                            <items>
+                                                <MenuItem fx:id="docviewpatient" mnemonicParsing="false" onAction="#docViewPatientAction" text="Patient" />
+                                                <MenuItem fx:id="doclabresult11" mnemonicParsing="false" onAction="#labReportAction" text="Lab test report" />
+                                                <MenuItem fx:id="doclabresult11111" mnemonicParsing="false" onAction="#docPatientAction" text="View all my patient" />
+                                            </items>
+                                        </Menu>
+                                        <Menu fx:id="admin_menu" mnemonicParsing="false" styleClass="menucolor" text="Admin">
+                                            <items>
+                                                <MenuItem fx:id="creataccount" mnemonicParsing="false" onAction="#createAccount" text="Create Account" />
+                                                <MenuItem fx:id="changeadmin" mnemonicParsing="false" onAction="#changeAdminDetails" text="Change Admin Details" />
+                                                <MenuItem fx:id="c_templates" mnemonicParsing="false" onAction="#createTemplate_Action" text="Create Templates" />
+                                                <MenuItem mnemonicParsing="false" onAction="#staffListAction" text="Staff List" />
+                                            </items>
+                                        </Menu>
+                                        <Menu fx:id="account_menu" mnemonicParsing="false" styleClass="menucolor" text="Account">
+                                            <items>
+                                                <MenuItem mnemonicParsing="false" onAction="#paymentAction" text="Payments" />
+                                                <MenuItem fx:id="viewaccsum" mnemonicParsing="false" onAction="#accountSummaryAction" text="View Account Summary" />
+                                            </items>
+                                        </Menu>
+                                        <Menu fx:id="hospital_menu" mnemonicParsing="false" styleClass="menucolor" text="Hospital Structure">
+                                            <items>
+                                                <MenuItem fx:id="adddepartment" mnemonicParsing="false" onAction="#addDepartment" text="Add Department" />
+                                                <MenuItem mnemonicParsing="false" onAction="#addWardAndBedAction" text="Add Ward and Bed" />
+                                                <MenuItem fx:id="companydetails" mnemonicParsing="false" onAction="#addCompanyDetails" text="Company Details" />
+                                            </items>
+                                        </Menu>
+                                        <Menu fx:id="pharmacy_menu" mnemonicParsing="false" styleClass="menucolor" text="Pharmacy">
+                                            <items>
+                                                <MenuItem fx:id="drugdetials" mnemonicParsing="false" onAction="#drugDetialsAction" text="Drug Details" />
+                                                <MenuItem fx:id="drugcategory" mnemonicParsing="false" onAction="#addDrugCategoryAction" text="Add Drug Category" />
+                                                <MenuItem fx:id="drugsales" mnemonicParsing="false" onAction="#drugSalesAction" text="Drug Sales" />
+                                                <MenuItem fx:id="dsanalysis" mnemonicParsing="false" onAction="#dsAnalysisAction" text="Drug Sales Anaylisis" />
+                                                <MenuItem fx:id="druglist" mnemonicParsing="false" onAction="#drugListAction" text="Drug List" />
+                                            </items>
+                                        </Menu>
+                              <Menu fx:id="store_menu" mnemonicParsing="false" styleClass="menucolor" text="Store">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#viewStoreItemAction" text="View Store Items" />
+                                                <MenuItem mnemonicParsing="false" onAction="#addStoreItemAction" text="Add Store Item" />
+                                    <MenuItem mnemonicParsing="false" onAction="#itemUsageAction" text="Item usage and Records" />
+                                 </items>
+                              </Menu>
+                              <Menu fx:id="help_menu" mnemonicParsing="false" styleClass="menucolor" text="Help">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#contactUsAction" text="Contact us" />
+                                    <MenuItem mnemonicParsing="false" onAction="#copyRightAction" text="Copyright" />
+                                    <MenuItem mnemonicParsing="false" onAction="#aboutAction" text="About" />
+                                 </items>
+                              </Menu>
+                                    </menus>
+                                </MenuBar>
+                            </top>
+                        </BorderPane>
+                    </children></VBox>
+            </children>
+        </VBox>
+    </children>
+</fx:root>

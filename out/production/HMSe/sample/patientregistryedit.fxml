@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="1254.0" styleClass="mainbox" stylesheets="@loginCss.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar styleClass="cheader">
+         <items>
+            <Label alignment="CENTER" style="-fx-text-fill: white;" styleClass="chlabel" text="Edit Registered Patient">
+               <font>
+                  <Font name="Andalus" size="34.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <HBox alignment="CENTER" prefHeight="460.0" prefWidth="1254.0" styleClass="chbox" VBox.vgrow="ALWAYS">
+         <children>
+            <GridPane alignment="CENTER" hgap="10.0" prefHeight="332.0" prefWidth="313.0">
+               <children>
+                  <Label styleClass="clabel" text="Surname" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="clabel" text="Date of Birth" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="firstnamefld" styleClass="ctextfld" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label styleClass="clabel" text="Nationality" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nationalityfld" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label styleClass="clabel" text="Occupation'" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="occupationfld" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <DatePicker fx:id="dobdpicker" styleClass="ctextfld" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label layoutX="20.0" layoutY="259.0" styleClass="clabel" text="Address" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addressfld" styleClass="ctextfld" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label layoutX="20.0" layoutY="103.0" styleClass="clabel" text="Other names" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="othernamefld" styleClass="ctextfld" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label styleClass="clabel" text="Type of patient.">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="patienttype" prefWidth="150.0" styleClass="ctextfld" GridPane.columnIndex="1" />
+                  <Label styleClass="clabel" text="Date of Reg." GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dateofregdpicker" styleClass="ctextfld" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label layoutX="20.0" layoutY="19.0" styleClass="clabel" text="HMO Group" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="hmogroupchb" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ChoiceBox fx:id="hmochb" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label layoutX="20.0" layoutY="51.0" styleClass="clabel" text="HMO" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="117.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="155.0" />
+               </columnConstraints>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane alignment="CENTER" layoutX="212.0" layoutY="10.0" prefHeight="332.0" prefWidth="339.0">
+               <children>
+                  <Label styleClass="clabel" text="Sex" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="clabel" text="Phone number">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="phonenofld" styleClass="ctextfld" GridPane.columnIndex="1" />
+                  <Label styleClass="clabel" text="Religion" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="clabel" text="place of work" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="placeofworkfld" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ChoiceBox fx:id="sexfld" prefHeight="25.0" prefWidth="89.0" styleClass="ctextfld" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ChoiceBox fx:id="religionfld" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label layoutX="20.0" layoutY="259.0" styleClass="clabel" text="Blood Group" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="bloodgroup" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label layoutX="20.0" layoutY="186.0" styleClass="clabel" text="Ethnic Group" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ethnicfld" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="spo2" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label styleClass="clabel" text="next of kin" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nextofkinfld" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label styleClass="clabel" text="Addres of kin" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addofkinfld" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label styleClass="clabel" text="Phone No. of Kin" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="phofkin" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label styleClass="clabel" text="Others" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="othersfld" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="6">
+                     <children>
+                        <Label styleClass="clabel" text="SPO">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="30.0" prefWidth="109.0">
+                           <children>
+                              <Label styleClass="clabel" text="2" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <Label layoutX="20.0" layoutY="324.0" styleClass="clabel" text="Age" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Aharoni Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="agefld" styleClass="ctextfld" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="124.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="184.0" />
+               </columnConstraints>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </GridPane>
+            <VBox prefHeight="312.0" prefWidth="160.0" style="-fx-spacing: 5;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <children>
+                  <VBox prefHeight="157.0" prefWidth="160.0" style="-fx-background-color: white;">
+                     <children>
+                        <VBox style="-fx-border-color: green;">
+                           <children>
+                              <ImageView fx:id="imgview" fitHeight="190.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="NEVER" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <Label styleClass="clabel" text="Patient Photograph" />
+                  <Button fx:id="uploadbutton" mnemonicParsing="false" styleClass="cbutton" text="upload" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="42.0" prefWidth="1254.0" styleClass="chbox">
+         <children>
+            <Button fx:id="edit_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" styleClass="cbutton" text="Edit" />
+         </children>
+      </HBox>
+   </children>
+
+      </fx:root>
