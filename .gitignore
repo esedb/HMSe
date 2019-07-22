@@ -3,6 +3,7 @@
 *.properties
 *.iml
 *.pdf
+Okro_soup
 
 # Compiled Object files
 *.slo
