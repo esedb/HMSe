@@ -1,9 +1,11 @@
 # Prerequisites
 *.d
-*.properties
+*.dat
+*.bin
 *.iml
 *.pdf
 Okro_soup
+time_spent.bin
 
 # Compiled Object files
 *.slo
